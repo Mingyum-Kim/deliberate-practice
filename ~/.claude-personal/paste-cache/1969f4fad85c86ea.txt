@@ -1,0 +1,140 @@
+I want to design and build a Slack integration system for Claude Code where all agents I manage through Claude Code behave like individual Slack users or personas.
+
+My goal is to communicate with Claude Code and its agents through Slack messages, monitor what each agent is working on, and interact with each agent directly via Slack DM.
+
+Please help me design the architecture and implementation plan for this system.
+
+Here is the desired behavior:
+
+1. Slack as the main interface
+- I want to send messages from Slack to Claude Code.
+- I want Claude Code to respond in Slack.
+- I want to see task progress, status updates, errors, and completion messages in Slack.
+- I want Slack to feel like the control center for all Claude Code agents.
+
+2. Multiple agents
+- I manage multiple agents in Claude Code.
+- Each agent has a role that I assign, such as backend engineer, reviewer, DevOps helper, QA tester, planner, etc.
+- Each agent may be working across different sessions or tasks.
+- I want each agent to appear as a separate persona in Slack.
+
+3. Direct messages
+- I want to be able to DM each agent individually.
+- When I send a DM to an agent, the message should be routed to the correct Claude Code agent/session.
+- The agent should reply back in that same Slack DM thread or conversation.
+
+4. Agent profiles
+- Each Slack-visible agent should have a profile-like identity:
+  - name
+  - role
+  - description
+  - current task
+  - current status
+  - linked Claude Code session or workspace
+- Ideally, this profile should be configurable by me.
+
+5. Task visibility
+- I want to know what each Claude Code agent is currently doing.
+- Slack should show status updates such as:
+  - idle
+  - working
+  - waiting for input
+  - blocked
+  - completed
+  - failed
+- I want to receive progress updates from agents while they work.
+
+6. Session management
+- Multiple Claude Code sessions may exist at the same time.
+- I need a reliable way to map Slack conversations to Claude Code sessions.
+- I want to resume an existing session from Slack when possible.
+- I want to create a new session from Slack when needed.
+
+7. Commands and interactions
+Please propose useful Slack commands or interactions, for example:
+- /agent list
+- /agent status
+- /agent dm <agent>
+- /agent assign <agent> <task>
+- /agent stop <agent>
+- /agent logs <agent>
+- /agent profile <agent>
+- buttons or modals for assigning tasks and viewing status
+
+8. Technical architecture
+Please recommend a concrete architecture. Include:
+- Slack App setup
+- OAuth scopes and permissions
+- event subscriptions
+- slash commands
+- interactive components
+- backend service
+- database schema
+- message routing layer
+- Claude Code session manager
+- task/status tracking
+- authentication and authorization
+- error handling
+- observability and logging
+
+9. Implementation options
+Please compare different implementation approaches:
+- one Slack bot user representing all agents
+- multiple Slack bot users or app-level personas
+- Slack user groups or channels per agent
+- DMs mapped to virtual agents
+- threads as task sessions
+- channels as workspaces
+
+Explain the tradeoffs and recommend the best approach.
+
+10. Data model
+Please propose a database schema for:
+- users
+- agents
+- agent roles
+- Slack conversations
+- Claude Code sessions
+- tasks
+- task events
+- messages
+- permissions
+- audit logs
+
+11. Security
+Please include security considerations:
+- who can control agents
+- how to prevent unauthorized Slack users from invoking agents
+- how to protect repository access
+- how to store tokens and secrets
+- how to audit actions
+- how to safely handle destructive commands
+
+12. MVP plan
+Please break this into phases:
+- MVP
+- V1
+- V2
+- production-ready version
+
+For the MVP, I want the smallest useful version that allows:
+- creating or registering agents
+- DM-like communication with each agent from Slack
+- assigning a task
+- receiving status updates
+- seeing the current status of all agents
+
+13. Deliverables
+Please provide:
+- recommended architecture
+- Slack App configuration
+- API design
+- database schema
+- message flow diagrams in text form
+- implementation steps
+- example code structure
+- suggested tech stack
+- risks and limitations
+- open questions I should decide before building
+
+Assume I am a backend engineer and want a practical, buildable system rather than only a high-level concept.

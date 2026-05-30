@@ -1,0 +1,103 @@
+training_program:
+  name: "English-Based Contribution Publishing Training"
+  slug: "english-based-contribution-publishing"
+  priority: 2
+  status: active
+  start_date: 2026-06-01
+  end_date: 2026-06-28
+  duration: 4 weeks
+  purpose: |
+    Build confidence through small, successful experiences of expressing work
+    context, questions, insights, and progress in English.
+    Problem: thoughts, questions, and insights often stay internal due to hesitation,
+    low confidence, or fear of judgment.
+    Behavior change: move from silent understanding to visible contribution —
+    externalizing work context and user impact in short, clear English.
+  daily_actions:
+    - Write one work-related English sentence (internal practice)
+    - Draft one English question or sharing message related to current work
+    - Add English impact or verification note to a PR, Jira, RFC, or document when relevant
+    - Send a question or status update via Slack/DM when there is a clear and useful message
+    - Use a prepared English sentence in a 1:1 when possible
+    - Ask a short clarification question or share one opinion in a team meeting when appropriate
+  daily_score:
+    name: Contribution Publishing Score
+    note: |
+      Measures psychological difficulty of communication actions and degree of
+      externalization. Not a measure of perfect English.
+      Count repeated actions if meaningfully separate.
+      If same content is copied to multiple places, count only the highest-difficulty action.
+      If a draft was meaningfully improved before sharing, the draft can also be counted.
+      Do not judge grammar. Evaluate whether work context and intention were communicated.
+    criteria:
+      - "Write one work-related English sentence alone: 1 point"
+      - "Draft an English question or sharing message: 2 points"
+      - "Add English impact/verification to PR/Jira/RFC/document: 3 points"
+      - "Send a question or status update via Slack/DM: 4 points"
+      - "Use a prepared English sentence in a 1:1: 5 points"
+      - "Ask a question or share an opinion in a team meeting: 6 points"
+  daily_reflection:
+    style: lightweight, AI-assisted, max 3 questions
+    questions:
+      - What work-related thought, question, or update did you try to express in English today?
+      - Where did you externalize it? (alone / draft / PR/Jira/RFC/doc / Slack/DM / 1:1 / meeting)
+      - What do you want to express tomorrow, and what is the smallest realistic way to do it?
+    ai_output_after_answers:
+      - Summarize what was externalized today
+      - Calculate the Contribution Publishing Score
+      - Identify externalization level (Level 1–4)
+      - Evaluate one representative message using English Contribution Quality Score (out of 5)
+      - Point out one thing done well
+      - Point out one missing or avoided part (without blame)
+      - Suggest realistic actions for tomorrow by difficulty
+      - Improve the user's English sentence into a short, natural version
+      - Ask which action the user will choose for tomorrow (optional)
+  english_contribution_quality_score:
+    scale: 5
+    criteria:
+      - "Context: Is it clear which ticket, work, or situation this is about?"
+      - "My understanding: Does it show how I currently understand the situation?"
+      - "User/product/work impact: Does it show why this matters?"
+      - "Clear question/request: Is it clear what I want the other person to do?"
+      - "Next action: Would the answer change what I do next?"
+  weekly_reflection:
+    style: user-led, ~30 minutes, AI guides with questions one at a time
+    focus:
+      - actual experience
+      - friction and avoidance
+      - effectiveness and visibility
+      - system adjustment
+    structure:
+      - Fact review (days practiced, actions done, externalization levels)
+      - Experience review (most meaningful moment, most uncomfortable moment)
+      - Score vs actual growth (did score reflect real growth? scoring adjustments?)
+      - Avoidance analysis (what was avoided and why? what is the smaller version?)
+      - Next week experiment (keep/reduce/try harder/minimum goal/challenge goal/one-sentence rule)
+    final_output:
+      - What actually happened this week
+      - Most meaningful moment
+      - Most uncomfortable moment
+      - Training effect
+      - Scoring system adjustment
+      - Keep / reduce / try harder next week
+      - Minimum goal and challenge goal for next week
+      - One-sentence rule for next week
+  reminders:
+    daily:
+      time: "21:00 CET"
+      message: "Reflect on today's English contribution. What did you try to express today?"
+    weekly:
+      day_time: "Saturday 21:00 CET"
+      message: "Do your weekly English contribution review."
+  review_rules:
+    adjust_if: |
+      Daily reflection feels too heavy, actions are avoided because they are too big,
+      score does not reflect actual psychological difficulty,
+      or actions are not connected to real work.
+    pause_if: |
+      No realistic work context for English communication for several days,
+      or the training creates more guilt than useful feedback.
+    complete_if: |
+      Can consistently write or say short English work updates/questions,
+      can use prepared sentences in 1:1 or Slack/DM without excessive hesitation,
+      can occasionally speak up in team meetings with short questions or opinions.

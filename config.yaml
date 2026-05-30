@@ -1,0 +1,10 @@
+reminders:
+  daily:
+    enabled: true
+    time: "21:00 CET"
+    message: "Reflect on today's deliberate practice actions."
+  weekly:
+    enabled: true
+    day: saturday
+    time: "21:00 CET"
+    message: "Do your weekly training system review."

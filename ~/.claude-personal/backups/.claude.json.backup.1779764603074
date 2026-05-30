@@ -1,0 +1,158 @@
+{
+  "numStartups": 3,
+  "installMethod": "native",
+  "autoUpdates": false,
+  "tipsHistory": {
+    "new-user-warmup": 2,
+    "plan-mode-for-complex-tasks": 3,
+    "memory-command": 3,
+    "theme-command": 3,
+    "status-line": 3,
+    "prompt-queue": 3,
+    "enter-to-steer-in-relatime": 3,
+    "todo-list": 3,
+    "install-github-app": 3,
+    "install-slack-app": 3,
+    "drag-and-drop-images": 3,
+    "paste-images-mac": 3,
+    "double-esc-code-restore": 3,
+    "continue": 3,
+    "shift-tab": 3,
+    "image-paste": 3,
+    "web-app": 3,
+    "voice-mode": 3
+  },
+  "btwUseCount": 1,
+  "firstStartTime": "2026-05-24T00:35:43.468Z",
+  "opusProMigrationComplete": true,
+  "opusProMigrationTimestamp": 1779582943493,
+  "sonnet1m45MigrationComplete": true,
+  "seenNotifications": {},
+  "migrationVersion": 13,
+  "changelogLastFetched": 1779582943595,
+  "oauthAccount": {
+    "accountUuid": "1bfd1a7d-704c-4334-ad8c-34cf7caf9423",
+    "emailAddress": "gms08184@gmail.com",
+    "organizationUuid": "c7f02587-facc-40f7-91ca-9d710fd773a7",
+    "hasExtraUsageEnabled": false,
+    "billingType": "stripe_subscription",
+    "accountCreatedAt": "2026-05-04T05:28:15.983444Z",
+    "subscriptionCreatedAt": "2026-05-04T05:33:19.147471Z",
+    "ccOnboardingFlags": {},
+    "claudeCodeTrialEndsAt": null,
+    "claudeCodeTrialDurationDays": null,
+    "seatTier": null,
+    "displayName": "안나",
+    "organizationRole": "admin",
+    "workspaceRole": null,
+    "organizationName": "gms08184@gmail.com's Organization",
+    "organizationType": "claude_pro",
+    "organizationRateLimitTier": "default_claude_ai",
+    "userRateLimitTier": null
+  },
+  "claudeCodeFirstTokenDate": null,
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.1.150",
+  "projects": {
+    "/Users/mingyumkim/Study/deliberate-practice": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": true,
+      "hasClaudeMdExternalIncludesWarningShown": true,
+      "lastGracefulShutdown": false,
+      "lastVersionBase": "2.1.150",
+      "lastCost": 0,
+      "lastAPIDuration": 0,
+      "lastAPIDurationWithoutRetries": 0,
+      "lastToolDuration": 0,
+      "lastDuration": 75737,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 0,
+      "lastTotalOutputTokens": 0,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 1.09,
+      "lastFpsLow1Pct": 145.87,
+      "lastModelUsage": {},
+      "lastSessionId": "6702eec5-09d8-4076-8671-1c2fe99bc546",
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 82,
+        "frame_duration_ms_min": 0.0816660000000411,
+        "frame_duration_ms_max": 6.855290999999852,
+        "frame_duration_ms_avg": 1.46536124390244,
+        "frame_duration_ms_p50": 0.8031670000000304,
+        "frame_duration_ms_p95": 5.399697900000774,
+        "frame_duration_ms_p99": 6.7428030599996776,
+        "hook_duration_ms_count": 1,
+        "hook_duration_ms_min": 44,
+        "hook_duration_ms_max": 44,
+        "hook_duration_ms_avg": 44,
+        "hook_duration_ms_p50": 44,
+        "hook_duration_ms_p95": 44,
+        "hook_duration_ms_p99": 44
+      }
+    }
+  },
+  "deepLinkTerminal": "Ghostty",
+  "lastReleaseNotesSeen": "2.1.150",
+  "githubRepoPaths": {
+    "mingyum-kim/deliberate-practice": [
+      "/Users/mingyumkim/Study/deliberate-practice"
+    ]
+  },
+  "userID": "978d599f9dbe456e206b55cd9e6157f627973467c7cbf60cfb156e46e8b5a1bf",
+  "clientDataCache": null,
+  "additionalModelOptionsCache": [],
+  "additionalModelCostsCache": {},
+  "penguinModeOrgEnabled": false,
+  "autoUpdatesProtectedForNative": true,
+  "passesEligibilityCache": {
+    "c7f02587-facc-40f7-91ca-9d710fd773a7": {
+      "eligible": false,
+      "referral_code_details": null,
+      "referrer_reward": null,
+      "remaining_passes": null,
+      "timestamp": 1779583031768
+    }
+  },
+  "groveConfigCache": {
+    "1bfd1a7d-704c-4334-ad8c-34cf7caf9423": {
+      "grove_enabled": true,
+      "timestamp": 1779583032046
+    }
+  },
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": true,
+  "cachedExtraUsageDisabledReason": "org_level_disabled",
+  "ideHintShownCount": 3,
+  "skillUsage": {
+    "grill-me": {
+      "usageCount": 1,
+      "lastUsedAt": 1779583166171
+    },
+    "add-program": {
+      "usageCount": 2,
+      "lastUsedAt": 1779635952916
+    },
+    "status": {
+      "usageCount": 2,
+      "lastUsedAt": 1779764198823
+    },
+    "reflect": {
+      "usageCount": 2,
+      "lastUsedAt": 1779604590895
+    },
+    "to-prd": {
+      "usageCount": 1,
+      "lastUsedAt": 1779764265093
+    }
+  },
+  "showSpinnerTree": false
+}

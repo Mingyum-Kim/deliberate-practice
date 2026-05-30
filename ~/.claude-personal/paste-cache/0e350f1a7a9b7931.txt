@@ -1,0 +1,253 @@
+Daily actions:
+
+- Write one work-related English sentence by myself.
+
+- Draft one English question or sharing message related to my work.
+
+- Add an English impact or verification note to a PR, Jira ticket, RFC, or document when relevant.
+
+- Send a question or status update through Slack/DM when I have a clear and useful question.
+
+- Use a prepared English sentence in a 1:1 conversation when possible.
+
+- Ask one short clarification question or share one opinion in a team meeting when the situation is appropriate.
+
+Daily scoring system:
+
+Use Contribution Publishing Score.
+
+The purpose of the score is not to measure perfect English.
+
+The purpose is to recognize psychologically difficult communication actions and measure how much I externalized my work contribution in English.
+
+Scoring criteria:
+
+- Writing one work-related English sentence by myself: 1 point
+
+- Drafting an English question or sharing message: 2 points
+
+- Adding English impact or verification to a PR, Jira ticket, RFC, or document: 3 points
+
+- Sending a question or status update through Slack/DM: 4 points
+
+- Asking or sharing something in a 1:1 using a prepared English sentence: 5 points
+
+- Asking a question or sharing an opinion once in a team meeting: 6 points
+
+Scoring rules:
+
+- Count repeated actions if they are meaningfully separate actions.
+
+- If I simply copy the same content into multiple places, count only the highest-difficulty action.
+
+- If the draft was meaningfully improved before being shared, the draft can also be counted.
+
+- Distinguish between internal practice and externalization:
+
+  - Internal practice: writing alone or drafting
+
+  - Externalization: PR/document, Slack/DM, 1:1, or team meeting
+
+- Do not judge based on perfect grammar.
+
+- Evaluate whether the work context and intention were communicated clearly.
+
+- Give scores based only on actions that are visible in my record.
+
+- Low scores are not failures. They are signals for choosing the next smaller action.
+
+Daily reflection:
+
+Daily reflection should be lightweight and AI-assisted.
+
+The AI should ask no more than 3 questions.
+
+Daily reflection questions:
+
+1. What work-related thought, question, or update did you try to express in English today?
+
+2. Where did you externalize it, if anywhere?
+
+   - alone
+
+   - draft
+
+   - PR/Jira/RFC/document
+
+   - Slack/DM
+
+   - 1:1
+
+   - team meeting
+
+3. What do you want to express tomorrow, and what is the smallest realistic way to do it?
+
+After I answer, the AI should:
+
+- Summarize what I externalized today.
+
+- Calculate the Contribution Publishing Score.
+
+- Identify the externalization level:
+
+  - Level 1: organized alone in English
+
+  - Level 2: added to PR/document/Jira
+
+  - Level 3: shared with a specific person through Slack/DM/1:1
+
+  - Level 4: shared in a team meeting or public channel
+
+- Evaluate one representative English question or sharing message using the English Contribution Quality Score.
+
+- Point out one thing I did well.
+
+- Point out one missing or avoided part without blaming me.
+
+- Suggest realistic actions for tomorrow by difficulty.
+
+- Improve my English sentence into a short, natural version I can actually use.
+
+- End by asking me what action I will choose for tomorrow.
+
+English Contribution Quality Score:
+
+Evaluate one representative question or sharing message out of 5 points.
+
+Criteria:
+
+1. Context: Is it clear which ticket, work, or situation this is about?
+
+2. My understanding: Does it show how I currently understand the situation?
+
+3. User/product/work impact: Does it show why this matters?
+
+4. Clear question/request: Is it clear what I want the other person to answer or review?
+
+5. Next action: Would the answer change what I do next?
+
+Weekly reflection:
+
+Weekly reflection should take about 30 minutes.
+
+It should be led by me, not by AI.
+
+The AI should guide the reflection through questions one at a time.
+
+The purpose of weekly reflection is not to evaluate me.
+
+The purpose is to help me understand:
+
+- whether this training actually helped my work communication,
+
+- whether expressing myself in English felt less difficult,
+
+- whether my contribution became more visible,
+
+- what I avoided,
+
+- what felt uncomfortable or unrealistic,
+
+- how to adjust the training system next week.
+
+Weekly reflection structure:
+
+1. Fact review
+
+   - How many days did I practice this training?
+
+   - What actions did I actually do?
+
+   - Did I write alone, draft, add to PR/document, send Slack/DM, speak in 1:1, or speak in a meeting?
+
+2. Experience review
+
+   - What was the most meaningful moment when I expressed something in English?
+
+   - Why was it meaningful?
+
+   - What was the most uncomfortable or difficult moment?
+
+   - Was the difficulty caused by English, confidence, timing, or the situation?
+
+3. Score vs actual growth
+
+   - Did the score reflect my real growth?
+
+   - Were there actions with high scores but low growth?
+
+   - Were there actions with low scores but high meaning?
+
+   - Should any scoring rule be adjusted?
+
+4. Avoidance analysis
+
+   - What did I want to say or share but failed to do?
+
+   - Why did I avoid it?
+
+   - What is the 10-minute smaller version of that action?
+
+5. Next week experiment
+
+   - What should I keep next week?
+
+   - What should I reduce or make smaller?
+
+   - What should I try one level harder?
+
+   - What is the minimum goal for next week?
+
+   - What is the challenge goal for next week?
+
+   - What is the one-sentence training rule for next week?
+
+Weekly reflection final output:
+
+- What actually happened this week
+
+- Most meaningful moment
+
+- Most uncomfortable moment
+
+- Training effect
+
+- Scoring system adjustment
+
+- What to keep next week
+
+- What to reduce or make smaller next week
+
+- What to try one level harder next week
+
+- Minimum goal for next week
+
+- Challenge goal for next week
+
+- One-sentence rule for next week
+
+Review rules:
+
+Adjust this training if:
+
+- daily reflection feels too heavy,
+
+- I avoid the training because the action is too big,
+
+- the score does not reflect actual psychological difficulty,
+
+- the actions are not connected to real work.
+
+Pause this training if:
+
+- there is no realistic work context for English communication for several days,
+
+- it creates more guilt than useful feedback.
+
+Complete this training if:
+
+- I can consistently write or say short English updates/questions about my work,
+
+- I can use prepared English sentences in 1:1 or Slack/DM without excessive hesitation,
+
+- I can occasionally speak up in team meetings with short clarification questions or opinions.

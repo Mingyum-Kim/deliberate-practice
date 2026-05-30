@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "deb15494",
+      "cron": "0 21 * * *",
+      "prompt": "/reflect",
+      "createdAt": 1779766777905,
+      "lastFiredAt": 1780127721636,
+      "recurring": true,
+      "createdBySessionId": "0a448816-2f3a-458f-b643-09eecc1b2b3c",
+      "createdByPid": 33650,
+      "createdByProcStart": "Tue May 26 03:23:02 2026"
+    },
+    {
+      "id": "2c77c7a6",
+      "cron": "0 21 * * 6",
+      "prompt": "/weekly",
+      "createdAt": 1779766781324,
+      "recurring": true,
+      "createdBySessionId": "0a448816-2f3a-458f-b643-09eecc1b2b3c",
+      "createdByPid": 33650,
+      "createdByProcStart": "Tue May 26 03:23:02 2026"
+    }
+  ]
+}

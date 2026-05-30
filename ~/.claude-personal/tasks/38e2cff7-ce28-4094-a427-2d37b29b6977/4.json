@@ -1,0 +1,12 @@
+{
+  "id": "4",
+  "subject": "Build Bolt app with DM handler and /agent commands",
+  "description": "message.im handler, /agent list, /agent dm, /agent assign, /agent status, /agent stop, /agent logs. Hybrid output mode (⏳ placeholder → replace on done).",
+  "activeForm": "Building Slack handlers",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": [
+    "2",
+    "3"
+  ]
+}

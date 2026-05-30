@@ -1,0 +1,13 @@
+{
+  "id": "2",
+  "subject": "Write Prisma schema and DB migrations",
+  "description": "agents, sessions, conversations, tasks, task_events, messages, authorized_users, audit_log tables",
+  "activeForm": "Writing DB schema",
+  "status": "pending",
+  "blocks": [
+    "5"
+  ],
+  "blockedBy": [
+    "1"
+  ]
+}

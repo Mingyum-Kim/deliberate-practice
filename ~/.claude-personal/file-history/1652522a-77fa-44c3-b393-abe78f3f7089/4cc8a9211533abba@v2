@@ -1,0 +1,112 @@
+---
+name: add-program
+description: Add a new deliberate practice training program. Asks the user 6 critical questions, generates a program.yaml with sensible defaults, and creates the program directory structure.
+---
+
+You are setting up a new deliberate practice training program. Follow these steps exactly.
+
+## Step 1: Ask the critical questions one at a time
+
+Ask these 6 questions one at a time. Wait for the user's answer before asking the next.
+
+1. What is the name of this training program?
+2. What priority is this program? (1 = highest, 2 = second, etc. — relative to other active programs)
+3. What is your motivation for this training? Why does it matter to you right now?
+4. What specific problem are you trying to solve with this training?
+5. What daily actions do you want to practice? (List them — can be bullet points)
+6. What would count as completing or ending this training? (e.g. a date, a milestone, a behavior change reached)
+
+## Step 2: Infer a slug
+
+Convert the training name to a lowercase hyphenated slug. Example: "Ticket-Based Product Immersion Training" → `ticket-based-product-immersion`.
+
+## Step 3: Create the directory structure
+
+Run these bash commands:
+```
+mkdir -p programs/{slug}/reflections/daily
+mkdir -p programs/{slug}/reflections/weekly
+```
+
+## Step 4: Write programs/{slug}/program.yaml
+
+Use this template. Fill in the user's answers. Use today's date for start_date. Leave end_date blank if the user gave a milestone rather than a date.
+
+```yaml
+training_program:
+  name: "{name}"
+  slug: "{slug}"
+  priority: {priority}
+  status: active
+  start_date: {today}
+  end_date: ""
+  motivation: |
+    {motivation}
+  goal: |
+    {completion_condition}
+  problem_to_solve: |
+    {problem}
+  desired_behavior_change: |
+    (leave blank — user can fill in later)
+  daily_actions:
+{daily_actions_as_yaml_list}
+  weekly_actions:
+    - Review daily reflection scores and identify patterns
+    - Adjust difficulty or scope of next week's daily actions
+  scoring_system:
+    scale: 1-5
+    criteria:
+      1: Did nothing or only passive exposure
+      2: Partial effort — started but did not complete
+      3: Completed the actions but without deep engagement
+      4: Fully engaged, produced real output or insight
+      5: Exceeded expectations — deep insight, visible contribution, or behavior shift
+  daily_reflection:
+    ai_role: Guide reflection, score actions based on criteria, suggest tomorrow's concrete plan
+    prompt_structure:
+      - What did you do today for this training?
+      - Which specific actions did you complete?
+      - What did you avoid or skip?
+      - What was difficult?
+      - What did you learn or notice?
+      - Score (1-5) with reasoning
+      - What is one concrete action for tomorrow?
+  weekly_reflection:
+    user_role: Lead the reflection — the AI asks questions, you answer
+    ai_role: Surface patterns from daily scores, ask guiding questions, do not evaluate
+    prompt_structure:
+      - Did this training actually help you this week?
+      - When did you feel most focused or engaged?
+      - What felt uncomfortable or unrealistic?
+      - What did you avoid?
+      - Was the scoring system useful?
+      - Did the training create real behavior change?
+      - What should you maintain next week?
+      - What should you reduce?
+      - What should you make harder?
+      - What should you make easier?
+  reminders:
+    daily:
+      enabled: true
+      time: "21:00"
+      message: "Reflect on today's deliberate practice actions."
+    weekly:
+      enabled: true
+      day: sunday
+      time: "10:00"
+      message: "Do your weekly training system review."
+  review_rules:
+    maintain_if: Scoring 3+ consistently for 5+ days
+    adjust_if: Scoring below 2 for 3+ consecutive days
+    pause_if: No reflections filed for 5+ consecutive days
+    complete_if: End date reached or completion condition met
+  notes: ""
+```
+
+## Step 5: Confirm
+
+Tell the user:
+- The file was created at `programs/{slug}/program.yaml`
+- They can edit any field directly in the YAML file
+- Run `/status` to see it in the dashboard
+- Run `/reflect` to start the first daily reflection

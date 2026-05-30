@@ -1,0 +1,11 @@
+{
+  "id": "1",
+  "subject": "Scaffold project structure and install dependencies",
+  "description": "Create the slack-agent-hub directory, package.json, tsconfig, and install @slack/bolt, prisma, ioredis, zod, tsx, dotenv",
+  "activeForm": "Scaffolding project",
+  "status": "in_progress",
+  "blocks": [
+    "3"
+  ],
+  "blockedBy": []
+}

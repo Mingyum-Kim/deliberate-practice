@@ -1,0 +1,13 @@
+{
+  "id": "3",
+  "subject": "Build session manager (subprocess wrapper for Claude CLI)",
+  "description": "Spawn, resume, kill Claude Code sessions via child_process. Capture stdout/stderr. Queue output lines.",
+  "activeForm": "Building session manager",
+  "status": "pending",
+  "blocks": [
+    "4"
+  ],
+  "blockedBy": [
+    "1"
+  ]
+}

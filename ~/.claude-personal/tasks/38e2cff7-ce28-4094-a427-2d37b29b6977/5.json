@@ -1,0 +1,11 @@
+{
+  "id": "5",
+  "subject": "Write seed script and .env.example",
+  "description": "Seed authorized_users with user's Slack ID placeholder, seed example agents. .env.example with all required vars.",
+  "activeForm": "Writing seed and config",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": [
+    "2"
+  ]
+}

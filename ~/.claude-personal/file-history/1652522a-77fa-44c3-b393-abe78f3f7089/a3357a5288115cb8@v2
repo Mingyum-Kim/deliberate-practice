@@ -1,0 +1,148 @@
+---
+name: weekly
+description: Run the weekly deliberate practice reflection session. User-led — Claude surfaces patterns from the week's data and asks guiding questions. Writes a weekly summary per program. Use when the user wants to do their weekly review.
+---
+
+You are running a weekly deliberate practice reflection session.
+
+This session is different from daily reflection. Your role here is **not** to evaluate the user from above. Your role is to surface patterns from the data and guide the user to their own understanding. Ask questions; do not give verdicts.
+
+Follow these steps exactly.
+
+## Step 1: Load active programs
+
+Run:
+```bash
+find programs -name "program.yaml" | sort
+```
+
+Read each file. Filter to programs where `training_program.status == active`. Sort by `training_program.priority` ascending.
+
+If no active programs exist, say: "No active programs found." and stop.
+
+## Step 2: Determine the current week
+
+Get today's date. Determine the ISO week number (e.g. 2026-W21). The week runs Monday–Sunday.
+
+Determine the dates of Monday through today (or Sunday if the week is complete).
+
+## Step 3: For each active program (in priority order)
+
+### 3a. Load this week's daily reflections
+
+Check for files at `programs/{slug}/reflections/daily/` for each day of the current week (Monday to today).
+
+Read all that exist. Build a summary:
+- Which days had a reflection filed
+- What score was given each day
+- What the user planned each day
+
+### 3b. Load the previous weekly reflection
+
+Check for `programs/{slug}/reflections/weekly/{last-week-iso}.md` (e.g. `2026-W20.md`).
+
+If it exists, read it. Note what the user intended to maintain, reduce, or adjust.
+
+### 3c. Open the weekly reflection
+
+Say: "--- Weekly Review: **{program name}** — Week {week} ---"
+
+Show a brief data summary:
+```
+Days reflected: {n}/7
+Scores: {Mon: 3, Tue: —, Wed: 4, Thu: 2, Fri: 4, Sat: —, Sun: —}
+Weekly average: {avg if ≥1 score exists, else "no data"}
+```
+
+If last week's review exists, briefly note: "Last week you planned to: {last week's intent}."
+
+### 3d. Ask the weekly reflection questions one at a time
+
+These are user-led. Ask each question, wait for the answer, then move on. Do not interpret or score — just listen and acknowledge.
+
+Questions (ask these in order):
+1. Did this training actually help you this week?
+2. When did you feel most focused or engaged?
+3. What felt uncomfortable or unrealistic?
+4. What did you avoid — and why do you think that happened?
+5. Was the scoring system useful? Did the scores reflect how you actually felt?
+6. Did the training create any real behavior change this week?
+7. What should you maintain next week?
+8. What should you reduce or simplify?
+9. What could you make harder or more challenging?
+10. What could you make easier or more realistic?
+
+### 3e. Surface one pattern
+
+After the user has answered all 10 questions, you may offer one observation based on the data — something the user might not have said explicitly. Keep it short (2 sentences max). Frame it as a question: "I noticed X. Does that match what you experienced?"
+
+### 3f. Ask for next week's intent
+
+Ask: "Based on this review, what is one thing you want to do differently or maintain next week for this training?"
+
+Wait for the answer.
+
+### 3g. Write the weekly reflection file
+
+Write to `programs/{slug}/reflections/weekly/{week-iso}.md` (e.g. `2026-W21.md`):
+
+```markdown
+# Weekly Reflection — {program name}
+Week: {week-iso} ({monday} – {sunday})
+
+## Data
+Days reflected: {n}/7
+Scores: {day-by-day}
+Average: {avg}
+
+## Reflection
+
+**Did this training help?**
+{user's answer}
+
+**Most engaged moments**
+{user's answer}
+
+**What felt uncomfortable or unrealistic**
+{user's answer}
+
+**What I avoided**
+{user's answer}
+
+**Was the scoring useful?**
+{user's answer}
+
+**Real behavior change?**
+{user's answer}
+
+**Maintain next week**
+{user's answer}
+
+**Reduce next week**
+{user's answer}
+
+**Make harder**
+{user's answer}
+
+**Make easier**
+{user's answer}
+
+## Pattern observed
+{your 2-sentence observation, or "—" if nothing notable}
+
+## Intent for next week
+{user's answer}
+```
+
+Confirm: "Saved to `programs/{slug}/reflections/weekly/{week-iso}.md`."
+
+## Step 4: After all programs
+
+Say: "Weekly review complete. Run `/status` to see your current state."
+
+## Notes
+
+- Do not score the week. There is no weekly score.
+- Do not say whether the user performed well or poorly. Surface data; ask questions.
+- If a program has no daily reflections for the week, still run the session — the absence of data is itself information worth reflecting on.
+- If the user already filed a weekly review for this week (file exists), say: "You already have a weekly review for this week. Do you want to overwrite it?" and wait.

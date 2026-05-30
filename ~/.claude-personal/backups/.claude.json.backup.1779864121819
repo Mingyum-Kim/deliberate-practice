@@ -1,0 +1,182 @@
+{
+  "numStartups": 4,
+  "installMethod": "native",
+  "autoUpdates": false,
+  "tipsHistory": {
+    "new-user-warmup": 2,
+    "plan-mode-for-complex-tasks": 3,
+    "memory-command": 3,
+    "theme-command": 3,
+    "status-line": 3,
+    "prompt-queue": 3,
+    "enter-to-steer-in-relatime": 3,
+    "todo-list": 3,
+    "install-github-app": 3,
+    "install-slack-app": 3,
+    "drag-and-drop-images": 3,
+    "paste-images-mac": 3,
+    "double-esc-code-restore": 3,
+    "continue": 3,
+    "shift-tab": 3,
+    "image-paste": 3,
+    "web-app": 3,
+    "voice-mode": 3
+  },
+  "btwUseCount": 3,
+  "showExpandedTodos": true,
+  "firstStartTime": "2026-05-24T00:35:43.468Z",
+  "opusProMigrationComplete": true,
+  "opusProMigrationTimestamp": 1779582943493,
+  "sonnet1m45MigrationComplete": true,
+  "seenNotifications": {},
+  "migrationVersion": 13,
+  "changelogLastFetched": 1779582943595,
+  "oauthAccount": {
+    "accountUuid": "1bfd1a7d-704c-4334-ad8c-34cf7caf9423",
+    "emailAddress": "gms08184@gmail.com",
+    "organizationUuid": "c7f02587-facc-40f7-91ca-9d710fd773a7",
+    "hasExtraUsageEnabled": false,
+    "billingType": "stripe_subscription",
+    "accountCreatedAt": "2026-05-04T05:28:15.983444Z",
+    "subscriptionCreatedAt": "2026-05-04T05:33:19.147471Z",
+    "ccOnboardingFlags": {},
+    "claudeCodeTrialEndsAt": null,
+    "claudeCodeTrialDurationDays": null,
+    "seatTier": null,
+    "displayName": "안나",
+    "organizationRole": "admin",
+    "workspaceRole": null,
+    "organizationName": "gms08184@gmail.com's Organization",
+    "organizationType": "claude_pro",
+    "organizationRateLimitTier": "default_claude_ai",
+    "userRateLimitTier": null
+  },
+  "claudeCodeFirstTokenDate": null,
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.1.150",
+  "projects": {
+    "/Users/mingyumkim/Study/deliberate-practice": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": true,
+      "hasClaudeMdExternalIncludesWarningShown": true,
+      "lastGracefulShutdown": false,
+      "lastVersionBase": "2.1.150",
+      "lastCost": 3.3749882000000007,
+      "lastAPIDuration": 754431,
+      "lastAPIDurationWithoutRetries": 751985,
+      "lastToolDuration": 6009,
+      "lastDuration": 181453227,
+      "lastLinesAdded": 994,
+      "lastLinesRemoved": 231,
+      "lastTotalInputTokens": 2900,
+      "lastTotalOutputTokens": 35422,
+      "lastTotalCacheCreationInputTokens": 377534,
+      "lastTotalCacheReadInputTokens": 4746839,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 0.5,
+      "lastFpsLow1Pct": 132.99,
+      "lastModelUsage": {
+        "claude-sonnet-4-6": {
+          "inputTokens": 547,
+          "outputTokens": 35408,
+          "cacheReadInputTokens": 4746839,
+          "cacheCreationInputTokens": 377534,
+          "webSearchRequests": 0,
+          "costUSD": 3.372565200000001
+        },
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 2353,
+          "outputTokens": 14,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0024230000000000002
+        }
+      },
+      "lastSessionId": "1652522a-77fa-44c3-b393-abe78f3f7089",
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 13471,
+        "frame_duration_ms_min": 0.03954199999861885,
+        "frame_duration_ms_max": 16.25287499651313,
+        "frame_duration_ms_avg": 1.8037092210688654,
+        "frame_duration_ms_p50": 1.5367914997041225,
+        "frame_duration_ms_p95": 3.495351747982203,
+        "frame_duration_ms_p99": 5.707454319847732,
+        "hook_duration_ms_count": 165,
+        "hook_duration_ms_min": 0,
+        "hook_duration_ms_max": 120095,
+        "hook_duration_ms_avg": 2229.6,
+        "hook_duration_ms_p50": 44,
+        "hook_duration_ms_p95": 116.59999999999945,
+        "hook_duration_ms_p99": 120035.6,
+        "pre_tool_hook_duration_ms_count": 45,
+        "pre_tool_hook_duration_ms_min": 0,
+        "pre_tool_hook_duration_ms_max": 6,
+        "pre_tool_hook_duration_ms_avg": 2.6,
+        "pre_tool_hook_duration_ms_p50": 2,
+        "pre_tool_hook_duration_ms_p95": 6,
+        "pre_tool_hook_duration_ms_p99": 6
+      }
+    }
+  },
+  "deepLinkTerminal": "Ghostty",
+  "lastReleaseNotesSeen": "2.1.150",
+  "githubRepoPaths": {
+    "mingyum-kim/deliberate-practice": [
+      "/Users/mingyumkim/Study/deliberate-practice"
+    ]
+  },
+  "userID": "978d599f9dbe456e206b55cd9e6157f627973467c7cbf60cfb156e46e8b5a1bf",
+  "clientDataCache": null,
+  "additionalModelOptionsCache": [],
+  "additionalModelCostsCache": {},
+  "penguinModeOrgEnabled": false,
+  "autoUpdatesProtectedForNative": true,
+  "passesEligibilityCache": {
+    "c7f02587-facc-40f7-91ca-9d710fd773a7": {
+      "eligible": false,
+      "referral_code_details": null,
+      "referrer_reward": null,
+      "remaining_passes": null,
+      "timestamp": 1779863512936
+    }
+  },
+  "groveConfigCache": {
+    "1bfd1a7d-704c-4334-ad8c-34cf7caf9423": {
+      "timestamp": 1779863512233
+    }
+  },
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": true,
+  "cachedExtraUsageDisabledReason": "org_level_disabled",
+  "ideHintShownCount": 4,
+  "skillUsage": {
+    "grill-me": {
+      "usageCount": 1,
+      "lastUsedAt": 1779583166171
+    },
+    "add-program": {
+      "usageCount": 2,
+      "lastUsedAt": 1779635952916
+    },
+    "status": {
+      "usageCount": 2,
+      "lastUsedAt": 1779764198823
+    },
+    "reflect": {
+      "usageCount": 2,
+      "lastUsedAt": 1779604590895
+    },
+    "to-prd": {
+      "usageCount": 1,
+      "lastUsedAt": 1779764265093
+    }
+  },
+  "showSpinnerTree": false
+}
