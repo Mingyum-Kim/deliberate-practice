@@ -8,3 +8,9 @@ reminders:
     day: saturday
     time: "21:00 CET"
     message: "Do your weekly training system review."
+
+obsidian:
+  vault: "/Users/mingyumkim/Library/Mobile Documents/iCloud~md~obsidian/Documents/Anna/DeliveryHero/DeliveryHero"
+  reflections_path: "/Users/mingyumkim/Library/Mobile Documents/iCloud~md~obsidian/Documents/Anna/DeliveryHero/DeliveryHero/Reflections/daily"
+  weekly_path: "/Users/mingyumkim/Library/Mobile Documents/iCloud~md~obsidian/Documents/Anna/DeliveryHero/DeliveryHero/Reflections/weekly"
+  date_format: "YYYY-MM-DD"
