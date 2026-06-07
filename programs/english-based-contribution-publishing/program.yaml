@@ -2,7 +2,7 @@ training_program:
   name: "English-Based Contribution Publishing Training"
   slug: "english-based-contribution-publishing"
   priority: 2
-  status: active
+  status: planned
   start_date: 2026-06-01
   end_date: 2026-06-28
   duration: "4 weeks"
